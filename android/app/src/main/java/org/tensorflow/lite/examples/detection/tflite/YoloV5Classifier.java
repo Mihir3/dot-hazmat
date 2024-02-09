@@ -21,6 +21,7 @@ import android.graphics.RectF;
 import android.os.Build;
 import android.util.Log;
 
+import org.opencv.core.Mat;
 import org.tensorflow.lite.Interpreter;
 import org.tensorflow.lite.Tensor;
 import org.tensorflow.lite.examples.detection.MainActivity;
@@ -43,7 +44,6 @@ import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Vector;
 
-
 /**
  * Wrapper for frozen detection models trained using the Tensorflow Object Detection API:
  * - https://github.com/tensorflow/models/tree/master/research/object_detection
@@ -54,6 +54,8 @@ import java.util.Vector;
  * - https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/running_on_mobile_tensorflowlite.md#running-our-model-on-android
  */
 public class YoloV5Classifier implements Classifier {
+
+    private static final Mat CONTOUR_COLOR = null ;
 
     /**
      * Initializes a native TensorFlow session for classifying images.
@@ -377,6 +379,7 @@ public class YoloV5Classifier implements Classifier {
         return imgData;
     }
 
+
     public ArrayList<Recognition> recognizeImage(Bitmap bitmap) {
         ByteBuffer byteBuffer_ = convertBitmapToByteBuffer(bitmap);
 
@@ -439,6 +442,7 @@ public class YoloV5Classifier implements Classifier {
                 Log.d("YoloV5Classifier",
                         Float.toString(xPos) + ',' + yPos + ',' + w + ',' + h);
 
+
                 final RectF rect =
                         new RectF(
                                 Math.max(0, xPos - w / 2),
@@ -447,14 +451,17 @@ public class YoloV5Classifier implements Classifier {
                                 Math.min(bitmap.getHeight() - 1, yPos + h / 2));
                 detections.add(new Recognition("" + offset, labels.get(detectedClass),
                         confidenceInClass, rect, detectedClass));
-            }
-        }
 
+            }
+
+        }
+        System.out.println("HERE333333");
         Log.d("YoloV5Classifier", "detect end");
         final ArrayList<Recognition> recognitions = nms(detections);
 //        final ArrayList<Recognition> recognitions = detections;
         return recognitions;
     }
+
 
     public boolean checkInvalidateBox(float x, float y, float width, float height, float oriW, float oriH, int intputSize) {
         // (1) (x, y, w, h) --> (xmin, ymin, xmax, ymax)

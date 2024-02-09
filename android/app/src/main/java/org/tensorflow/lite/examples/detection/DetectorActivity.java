@@ -32,10 +32,6 @@ import android.util.Size;
 import android.util.TypedValue;
 import android.widget.Toast;
 
-import java.io.IOException;
-import java.util.LinkedList;
-import java.util.List;
-
 import org.tensorflow.lite.examples.detection.customview.OverlayView;
 import org.tensorflow.lite.examples.detection.customview.OverlayView.DrawCallback;
 import org.tensorflow.lite.examples.detection.env.BorderedText;
@@ -45,6 +41,10 @@ import org.tensorflow.lite.examples.detection.tflite.Classifier;
 import org.tensorflow.lite.examples.detection.tflite.DetectorFactory;
 import org.tensorflow.lite.examples.detection.tflite.YoloV5Classifier;
 import org.tensorflow.lite.examples.detection.tracking.MultiBoxTracker;
+
+import java.io.IOException;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * An activity that uses a TensorFlowMultiBoxDetector and ObjectTracker to detect and then track
@@ -227,9 +227,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
         LOGGER.i("Preparing image " + currTimestamp + " for detection in bg thread.");
 
         rgbFrameBitmap.setPixels(getRgbBytes(), 0, previewWidth, 0, 0, previewWidth, previewHeight);
-
         readyForNextImage();
-
         final Canvas canvas = new Canvas(croppedBitmap);
         canvas.drawBitmap(rgbFrameBitmap, frameToCropTransform, null);
         // For examining the actual TF input.
@@ -243,6 +241,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
                     public void run() {
                         LOGGER.i("Running detection on image " + currTimestamp);
                         final long startTime = SystemClock.uptimeMillis();
+                        System.out.println("HELLOOOOOO");
                         final List<Classifier.Recognition> results = detector.recognizeImage(croppedBitmap);
                         lastProcessingTimeMs = SystemClock.uptimeMillis() - startTime;
 
@@ -291,9 +290,11 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
                                         showInference(lastProcessingTimeMs + "ms");
                                     }
                                 });
+
                     }
                 });
     }
+
 
     @Override
     protected int getLayoutId() {
