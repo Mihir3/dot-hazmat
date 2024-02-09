@@ -23,7 +23,7 @@ Pamnani, Mihir and Gala, Tejas and Walawalkar, Sohan and Jagasia, Kaushal and Ha
 
 # update
 
-[February 2024] : The repository for this project was recreated since another team mate lost access to the GitHub account used to author the original repository.
+[February 2024] : The repository for this project was recreated since a team mate lost access to the GitHub account which was used to author the original repository.
 
 
 
