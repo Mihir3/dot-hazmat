@@ -1,8 +1,8 @@
 # dot-hazmat
 <p align='center'>
 <img src="https://github.com/Mihir3/dot-hazmat/blob/main/detections_one.png" width="400">
-<img src="https://github.com/Mihir3/dot-hazmat/blob/main/android_one.png" width="400">
-<img src="https://github.com/Mihir3/dot-hazmat/blob/main/android_two.png" width="400">
+<img src="https://github.com/Mihir3/dot-hazmat/blob/main/android_one.png" width="200">
+<img src="https://github.com/Mihir3/dot-hazmat/blob/main/android_two.png" width="200">
 </p>
 
 This repository is the code base for the paper [**DOT-HAZMAT: An Android Application for Detection of Hazardous Materials (HAZMAT) Signs**](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4111847) presented at Proceedings of the 7th International Conference on Innovations and Research in Technology and Engineering (ICIRTE-2022), organized by VPPCOE & VA, Mumbai-22, INDIA.
