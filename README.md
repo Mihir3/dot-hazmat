@@ -21,6 +21,9 @@ Top 10 papers under CompSciRN: Other Applied Computing in August 2022
 
 Pamnani, Mihir and Gala, Tejas and Walawalkar, Sohan and Jagasia, Kaushal and Hande, Rupali, DOT-HAZMAT: An Android Application for Detection of Hazardous Materials (HAZMAT) Signs (April 8, 2022). Proceedings of the 7th International Conference on Innovations and Research in Technology and Engineering (ICIRTE-2022), organized by VPPCOE & VA, Mumbai-22, INDIA, Available at SSRN: https://ssrn.com/abstract=4111847 or http://dx.doi.org/10.2139/ssrn.4111847
 
+# update
+
+[February 2024] : The repository for this project was recreated since another team mate lost access to the GitHub account used to author the original repository.
 
 
 
