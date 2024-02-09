@@ -6,6 +6,9 @@ In this research, we proposed a YOLOv5-CNN pipeline built in Pytorch and deploye
 
 We would like to acknowledge that the code behind our prototype Android application to demonstrate the implementation of object detection techniques for HAZMAT signs is built on top of the [**tf-android**](https://github.com/zldrobit/yolov5) branch forked by Jiacong Fang from the original [**YOLOv5 Ultralytics repository**](https://github.com/ultralytics/yolov5) authored by Glenn Jocher.
 
+# Citation 
+
+Pamnani, Mihir and Gala, Tejas and Walawalkar, Sohan and Jagasia, Kaushal and Hande, Rupali, DOT-HAZMAT: An Android Application for Detection of Hazardous Materials (HAZMAT) Signs (April 8, 2022). Proceedings of the 7th International Conference on Innovations and Research in Technology and Engineering (ICIRTE-2022), organized by VPPCOE & VA, Mumbai-22, INDIA, Available at SSRN: https://ssrn.com/abstract=4111847 or http://dx.doi.org/10.2139/ssrn.4111847
 
 
 
