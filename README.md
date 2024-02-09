@@ -11,7 +11,7 @@ In this research, we proposed a YOLOv5-CNN pipeline built in Pytorch and deploye
 
 We would like to acknowledge that the code behind our prototype Android application to demonstrate the implementation of object detection techniques for HAZMAT signs is built on top of the [**tf-android**](https://github.com/zldrobit/yolov5) branch forked by Jiacong Fang from the original [**YOLOv5 Ultralytics repository**](https://github.com/ultralytics/yolov5) authored by Glenn Jocher.
 
-This work was performed by myself (Mihir Pamnani), Kaushal Jagasia, Sohan Walawalkar, and Tejas Gala under the supervision of Asst. Prof. Rupali Hande for junior year thesis  project work at Vivekanand Education Society's Institute of TEchnology (VESIT), University of Mumbai, India in 2021.
+This work was performed by myself (Mihir Pamnani), Kaushal Jagasia, Sohan Walawalkar, and Tejas Gala under the supervision of Asst. Prof. Rupali Hande for junior year thesis  project work at Vivekanand Education Society's Institute of Technology (VESIT), University of Mumbai, India.
 
 # work recognition
 
